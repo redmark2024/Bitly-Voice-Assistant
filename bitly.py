@@ -910,24 +910,42 @@ class ModernGUI:
         basic_commands = [
             "click", "double click", "right click", "scroll up", "scroll down",
             "move to", "press", "type", "open", "close", "minimize", "maximize", 
-            "minimize all", "restore all", "stop listening", "exit"
+            "minimize all", "restore all", "stop listening", "exit","browse to", "search for", "open new tab", "close tab", "next tab", 
+            "previous tab", "refresh page", "go back", "go forward", "scroll to top",
+            "scroll to bottom", "zoom in", "zoom out", "reset zoom", "save page",
+            "print page", "bookmark page", "open word", "open excel", "open powerpoint", "open outlook", "open onenote",
+            "save document", "new document", "new spreadsheet", "new presentation", "new email",
+            "bold text", "italic text", "underline text", "select all", "copy", 
+            "cut", "paste", "undo", "redo", "insert table",
+            "add slide", "insert image", "switch to reading view", "switch to editing view", "show spelling check"
         ]
         
         self.setup_command_buttons(self.tab_basic, basic_commands, rows=5, cols=3)
         
         # Add commands to browser tab
         browser_commands = [
-            "browse to", "search for", "open new tab", "close tab", "next tab", 
+            "click", "double click", "right click", "scroll up", "scroll down",
+            "move to", "press", "type", "open", "close", "minimize", "maximize", 
+            "minimize all", "restore all", "stop listening", "exit","browse to", "search for", "open new tab", "close tab", "next tab", 
             "previous tab", "refresh page", "go back", "go forward", "scroll to top",
             "scroll to bottom", "zoom in", "zoom out", "reset zoom", "save page",
-            "print page", "bookmark page"
+            "print page", "bookmark page", "open word", "open excel", "open powerpoint", "open outlook", "open onenote",
+            "save document", "new document", "new spreadsheet", "new presentation", "new email",
+            "bold text", "italic text", "underline text", "select all", "copy", 
+            "cut", "paste", "undo", "redo", "insert table",
+            "add slide", "insert image", "switch to reading view", "switch to editing view", "show spelling check"
         ]
         
         self.setup_command_buttons(self.tab_browser, browser_commands, rows=6, cols=3)
         
         # Add commands to office tab
         office_commands = [
-            "open word", "open excel", "open powerpoint", "open outlook", "open onenote",
+                        "click", "double click", "right click", "scroll up", "scroll down",
+            "move to", "press", "type", "open", "close", "minimize", "maximize", 
+            "minimize all", "restore all", "stop listening", "exit","browse to", "search for", "open new tab", "close tab", "next tab", 
+            "previous tab", "refresh page", "go back", "go forward", "scroll to top",
+            "scroll to bottom", "zoom in", "zoom out", "reset zoom", "save page",
+            "print page", "bookmark page", "open word", "open excel", "open powerpoint", "open outlook", "open onenote",
             "save document", "new document", "new spreadsheet", "new presentation", "new email",
             "bold text", "italic text", "underline text", "select all", "copy", 
             "cut", "paste", "undo", "redo", "insert table",
