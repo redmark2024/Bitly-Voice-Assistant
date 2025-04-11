@@ -12,8 +12,8 @@ Perfect! Here's an engaging and polished version of your **Hackathon team introd
 > _“Innovation isn’t built in a day — it’s built Bit By Bit.”_
 
 ### 👥 Team Members:
-- 👨‍💻 **Pritideep Mahata** *(Computer Engineering)*  
-- 👨‍💻 **Abir Mandal** *(Computer Engineering)*  
+- 👨‍💻 **Pritideep Mahata** *(Civil Engineering)*  
+- 👨‍💻 **Abir Mandal** *(Civil Engineering)*  
 - 👨‍💻 **Upen Kumbhakar** *(Computer Science & Engineering)*  
 - 👨‍💻 **Subhajit Maji** *(Electronics & Communication Engineering)*  
 
