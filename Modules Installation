@@ -1,0 +1,49 @@
+Sure! Here's a full list of **installation commands** (using `pip`) for all the libraries you're importing in your script:
+
+### ✅ Required Installations (via `pip`)
+Open a terminal or command prompt and run these:
+
+```bash
+pip install SpeechRecognition
+pip install pyautogui
+pip install pyttsx3
+pip install keyboard
+pip install pillow
+pip install customtkinter
+pip install psutil
+```
+
+### 🛠️ Additional Requirements
+
+Some libraries are **built-in** or **Windows-specific**, so here's more detail:
+
+- ✅ **Built-in with Python (no need to install):**
+  - `os`, `sys`, `time`, `threading`, `json`, `re`, `subprocess`
+
+- 🪟 **Windows-specific (comes with Windows + Python for Windows):**
+  - `win32gui`, `win32con`, `win32process`, `winreg`  
+    → These are part of **pywin32**, so install with:
+    ```bash
+    pip install pywin32
+    ```
+
+- 🌐 `webbrowser`, `tkinter`:
+  - `webbrowser` is built-in.
+  - `tkinter` is included with standard Python installs, but if missing:
+    - For **Windows**: Install a complete Python version from [python.org](https://www.python.org/)
+    - For **Linux (like Ubuntu)**:
+      ```bash
+      sudo apt-get install python3-tk
+      ```
+
+---
+
+### 💡 Optional tip:
+
+To install everything in one go:
+
+```bash
+pip install SpeechRecognition pyautogui pyttsx3 keyboard pillow customtkinter psutil pywin32
+```
+
+Let me know if you want a `requirements.txt` or if you're running into issues while installing anything.
