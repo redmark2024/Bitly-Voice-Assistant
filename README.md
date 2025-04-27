@@ -2,6 +2,10 @@
 🔊 Voice Control Assistant Windows Application – Hands-Free Control (Without Mouse & Keyboard)
 
 
+![Screenshot 2025-04-26 203758](https://github.com/user-attachments/assets/b862f967-5265-4bb5-a28a-7f7bb3a5a1c9)
+
+
+
 
 Perfect! Here's an engaging and polished version of your **Hackathon team introduction**, complete with the team name, members, programming language, and the modules used — with explanations of why each was chosen:
 
