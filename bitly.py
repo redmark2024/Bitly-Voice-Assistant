@@ -19,6 +19,7 @@ import psutil
 import re
 import subprocess
 import winreg
+from auth_gui import AuthGUI
 
 class VoiceAssistant:
     def __init__(self):
@@ -1393,13 +1394,32 @@ class ModernGUI:
 def main():
     # Set up PyAutoGUI settings
     pyautogui.FAILSAFE = True
+    pyautogui.PAUSE = 0.1
     
-    # Create application
+    # Start with authentication
+    auth_gui = AuthGUI()
+    auth_gui.start()
+    
+    # Check if login was successful (auth_gui.window.winfo_exists() will be False if window was destroyed)
+    if not auth_gui.window.winfo_exists():
+        print("Login failed or window closed. Exiting application.")
+        sys.exit(0)
+    
+    # Create and start the voice assistant
     assistant = VoiceAssistant()
     gui = ModernGUI(assistant)
+    assistant.gui = gui
     
-    # Start GUI
+    # Start the GUI
     gui.start()
+    
+    # Start voice recognition in a separate thread
+    voice_thread = threading.Thread(target=assistant.run)
+    voice_thread.daemon = True
+    voice_thread.start()
+    
+    # Start the main event loop
+    gui.root.mainloop()
 
 if __name__ == "__main__":
     main()
